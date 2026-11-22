@@ -1,0 +1,54 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  background: #f4f1ea;
+  color: #1c1a17;
+}
+
+header, main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+header {
+  padding-top: 3rem;
+}
+
+.kicker {
+  margin: 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6b4f2a;
+}
+
+h1 {
+  margin: 0.2rem 0 0.4rem;
+  font-size: 2.4rem;
+}
+
+h2 {
+  margin-bottom: 0.4rem;
+  font-size: 1.25rem;
+}
+
+section {
+  margin-top: 1.6rem;
+}
+
+button {
+  font: inherit;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #1c1a17;
+  background: #fff;
+  cursor: pointer;
+}
+
+li {
+  margin: 0.2rem 0;
+}
