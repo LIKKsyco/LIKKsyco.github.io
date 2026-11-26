@@ -1,13 +1,15 @@
-const button = document.querySelector("#path");
-const steps = document.querySelector("#steps");
+var button = document.getElementById("more");
+var note = document.getElementById("check");
+var year = document.getElementById("year");
 
-button.addEventListener("click", () => {
-  const hidden = steps.hasAttribute("hidden");
-  if (hidden) {
-    steps.removeAttribute("hidden");
-    button.textContent = "Hide the exchange";
+year.textContent = String(new Date().getFullYear());
+
+button.onclick = function () {
+  if (note.hidden) {
+    note.hidden = false;
+    button.textContent = "Hide what I check";
   } else {
-    steps.setAttribute("hidden", "");
-    button.textContent = "Show the exchange";
+    note.hidden = true;
+    button.textContent = "Show what I check";
   }
-});
+};
