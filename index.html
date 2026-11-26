@@ -2,41 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LIKKsyco</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <p class="kicker">CSI205TC</p>
+  <div class="banner">
     <h1>LIKKsyco</h1>
-    <p>A personal page for networking and distributed computing.</p>
-  </header>
-  <main>
-    <section>
-      <h2>On this course</h2>
-      <p>The page is reached by a name, an address, and a transport connection. DNS turns the name into an IP address. TCP carries the HTTP response. The files themselves are static: this document, a style sheet, and a short script.</p>
-    </section>
-    <section>
-      <h2>What the modules of work are</h2>
-      <ul>
-        <li>Socket streams, TCP and UDP</li>
-        <li>This site, and the path packets take to it</li>
-        <li>Map, shuffle, and reduce</li>
-        <li>The same word count in Hadoop and Spark</li>
-        <li>A Spark MLlib model on the gesture files</li>
-      </ul>
-    </section>
-    <section>
-      <h2>How this page is fetched</h2>
-      <button id="path" type="button">Show the exchange</button>
-      <ol id="steps" hidden>
-        <li>The resolver looks up likksyco.github.io.</li>
-        <li>TCP opens a connection to port 443.</li>
-        <li>TLS protects the HTTP request for these three files.</li>
-      </ol>
-    </section>
-  </main>
+    <p>CSI205TC, Taicang</p>
+  </div>
+
+  <div class="card">
+    <h2>About this page</h2>
+    <p>Hi. I put this page up for the networking coursework. The address is likksyco.github.io. There are only three files, because that is what the lab asked for.</p>
+    <p>I am working through sockets first. After that the same word count goes through Hadoop and Spark, and there is a gesture file for a random forest. Those programs are not on this site. They stay with the report.</p>
+
+    <h2>Files</h2>
+    <ul>
+      <li>index.html, the text you are reading</li>
+      <li>style.css, the blue bar and this white box</li>
+      <li>main.js, the button and the year at the bottom</li>
+    </ul>
+
+    <button id="more" type="button">Show what I check</button>
+    <p id="check" hidden>I check the name, the IP that comes back, and whether TCP reaches port 443. The ping and the trace from my PC are written up in the report.</p>
+
+    <p class="small">Last touched in <span id="year">2026</span>.</p>
+  </div>
   <script src="main.js"></script>
 </body>
 </html>
